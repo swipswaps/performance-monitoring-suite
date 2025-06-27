@@ -1,0 +1,244 @@
+{
+  "timestamp": "2025-06-27T05:15:43.794343",
+  "issues": [
+    {
+      "severity": "CRITICAL",
+      "category": "APPLICATION",
+      "issue": "VSCode Insiders consuming 112.0% total CPU across 20 processes",
+      "impact": "Major cause of system sluggishness and typing delays"
+    },
+    {
+      "severity": "HIGH",
+      "category": "DISK",
+      "issue": "High I/O wait time: 2701.98%",
+      "impact": "Disk bottleneck causing system delays"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "IMMEDIATE",
+      "action": "Optimize VSCode or switch to lighter editor",
+      "commands": [
+        "code-insiders --disable-extensions",
+        "code-insiders --disable-gpu",
+        "Switch to VSCode stable or vim/nano for better performance"
+      ]
+    }
+  ],
+  "system_info": {
+    "load_averages": {
+      "1min": 3.21044921875,
+      "5min": 3.259765625,
+      "15min": 3.50439453125,
+      "cpu_cores": 8,
+      "load_per_core": 0.40130615234375
+    },
+    "memory": {
+      "total_gb": 14.843036651611328,
+      "used_gb": 8.176803588867188,
+      "available_gb": 6.2348785400390625,
+      "percent_used": 58.0,
+      "buffers_gb": 0.00646209716796875,
+      "cached_gb": 4.239582061767578,
+      "swap_total_gb": 7.999996185302734,
+      "swap_used_gb": 0.0,
+      "swap_percent": 0.0
+    },
+    "disk_io": {
+      "read_gb": 2.015437126159668,
+      "write_gb": 2.3898019790649414,
+      "read_time_ms": 705238,
+      "write_time_ms": 1452043
+    }
+  },
+  "process_analysis": {
+    "cpu_intensive": [
+      {
+        "pid": 4431,
+        "name": "code-insiders",
+        "cpu_percent": 103.0,
+        "memory_percent": 21.305454389383947
+      },
+      {
+        "pid": 2317,
+        "name": "kglobalacceld",
+        "cpu_percent": 21.0,
+        "memory_percent": 1.530372681869734
+      }
+    ],
+    "vscode": {
+      "processes": [
+        {
+          "pid": 4117,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 94.47265625,
+          "memory_percent": 0.6215605036529048
+        },
+        {
+          "pid": 4131,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 486.7109375,
+          "memory_percent": 3.2021995300452604
+        },
+        {
+          "pid": 4134,
+          "type": "Zygote",
+          "cpu_percent": 0.0,
+          "memory_mb": 50.6484375,
+          "memory_percent": 0.33322941866295486
+        },
+        {
+          "pid": 4135,
+          "type": "Zygote",
+          "cpu_percent": 0.0,
+          "memory_mb": 51.25390625,
+          "memory_percent": 0.33721295713995303
+        },
+        {
+          "pid": 4137,
+          "type": "Zygote",
+          "cpu_percent": 0.0,
+          "memory_mb": 12.65234375,
+          "memory_percent": 0.08324310404514197
+        },
+        {
+          "pid": 4175,
+          "type": "Zygote",
+          "cpu_percent": 4.0,
+          "memory_mb": 190.76953125,
+          "memory_percent": 1.2551230232332815
+        },
+        {
+          "pid": 4178,
+          "type": "Utility",
+          "cpu_percent": 0.0,
+          "memory_mb": 76.1171875,
+          "memory_percent": 0.5007950371792641
+        },
+        {
+          "pid": 4201,
+          "type": "Zygote",
+          "cpu_percent": 2.0,
+          "memory_mb": 604.47265625,
+          "memory_percent": 3.9769849136972812
+        },
+        {
+          "pid": 4269,
+          "type": "Utility",
+          "cpu_percent": 0.0,
+          "memory_mb": 122.50390625,
+          "memory_percent": 0.8059854850137999
+        },
+        {
+          "pid": 4286,
+          "type": "Utility",
+          "cpu_percent": 0.0,
+          "memory_mb": 181.57421875,
+          "memory_percent": 1.1946246388793869
+        },
+        {
+          "pid": 4313,
+          "type": "Utility",
+          "cpu_percent": 0.0,
+          "memory_mb": 131.3203125,
+          "memory_percent": 0.8639909452885406
+        },
+        {
+          "pid": 4323,
+          "type": "Utility",
+          "cpu_percent": 0.0,
+          "memory_mb": 781.00390625,
+          "memory_percent": 5.13843053210051
+        },
+        {
+          "pid": 4431,
+          "type": "Zygote",
+          "cpu_percent": 106.0,
+          "memory_mb": 3238.2734375,
+          "memory_percent": 21.305454389383947
+        },
+        {
+          "pid": 5992,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 329.62109375,
+          "memory_percent": 2.1686640471260312
+        },
+        {
+          "pid": 6037,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 127.0390625,
+          "memory_percent": 0.8358234732189279
+        },
+        {
+          "pid": 6038,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 173.88671875,
+          "memory_percent": 1.1440465503456299
+        },
+        {
+          "pid": 6055,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 108.67578125,
+          "memory_percent": 0.7150066062488097
+        },
+        {
+          "pid": 6137,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 89.8671875,
+          "memory_percent": 0.5912599109794802
+        },
+        {
+          "pid": 6146,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 105.5078125,
+          "memory_percent": 0.6941637049272259
+        },
+        {
+          "pid": 6154,
+          "type": "Main",
+          "cpu_percent": 0.0,
+          "memory_mb": 81.50390625,
+          "memory_percent": 0.5362356795004284
+        }
+      ],
+      "total_cpu_percent": 112.0,
+      "total_memory_percent": 46.30403445066876,
+      "process_count": 20
+    }
+  },
+  "kde_analysis": {
+    "plasmashell": {
+      "pid": 1604,
+      "cpu_percent": 0.0,
+      "memory_mb": 656.671875,
+      "memory_percent": 4.320417330910999
+    },
+    "kglobalacceld": {
+      "pid": 2317,
+      "cpu_percent": 0.0,
+      "memory_mb": 240.296875,
+      "memory_percent": 1.58097647065173
+    },
+    "kded6": {
+      "pid": 2488,
+      "cpu_percent": 0.0,
+      "memory_mb": 149.703125,
+      "memory_percent": 0.9849363134998521
+    },
+    "kwin_x11": {
+      "pid": 2489,
+      "cpu_percent": 0.0,
+      "memory_mb": 198.46875,
+      "memory_percent": 1.3057782125117547
+    }
+  },
+  "performance_score": 50
+}
